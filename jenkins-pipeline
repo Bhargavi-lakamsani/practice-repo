@@ -1,10 +1,13 @@
 pipeline {
     agent any
-
-     triggers {
-          webhook('http://jenkins-server/generic-webhook-trigger/invoke')
+    triggers {
+        genericWebhook(
+            genericVariables: [
+                [key: 'token', value: 'mytoken']
+            ],
+            token: 'mytoken'
+        )
     }
-
     stages {
         stage('Stage-1') {
               steps {
