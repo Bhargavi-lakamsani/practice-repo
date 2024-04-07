@@ -3,7 +3,7 @@ pipeline {
    triggers {
   GenericTrigger causeString: 'Generic Cause', regexpFilterExpression: '', regexpFilterText: '', token: '', tokenCredentialId: 'mytoken'
 }
-    }
+    
     stages {
         stage('Stage-1') {
               steps {
