@@ -17,5 +17,10 @@ pipeline {
                 sh 'touch file1'
     }
 }
+stage('Stage-4') {
+            steps {
+                sh 'touch file2'
+    }
+}
 }
 }
