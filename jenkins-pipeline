@@ -1,12 +1,12 @@
 pipeline {
     agent any
     triggers {
-        generictriggers(
+        genericTriggers(
             genericVariables: [
-                [key: 'token', value: 'bhargavi@070189']
+                [key: 'token', value: 'mytoken']
             ],
-            token: 'bhargavi@070189',
-            causeString: 'Triggered by webhook'
+            token: 'mytoken'
+            
         )
     }
     stages {
