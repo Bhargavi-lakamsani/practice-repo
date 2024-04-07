@@ -3,9 +3,9 @@ pipeline {
     triggers {
         generictriggers(
             genericVariables: [
-                [key: 'token', value: 'mytoken']
+                [key: 'token', value: 'bhargavi@070189']
             ],
-            token: 'mytoken',
+            token: 'bhargavi@070189',
             causeString: 'Triggered by webhook'
         )
     }
