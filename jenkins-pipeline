@@ -6,6 +6,7 @@ pipeline {
                 [key: 'token', value: 'mytoken']
             ],
             token: 'mytoken'
+            causeString: 'Triggered by webhook'
             )
     }
     stages {
@@ -33,6 +34,11 @@ stage('Stage-4') {
 stage('Stage-5') {
             steps {
                 sh 'touch file3'
+    }
+}
+stage('Stage-6') {
+            steps {
+                sh 'touch file4'
     }
 }
 }
