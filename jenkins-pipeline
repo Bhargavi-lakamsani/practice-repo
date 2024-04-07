@@ -12,5 +12,8 @@ pipeline {
                 sh 'touch master'
             }
         }
+        stage('Stage-3') {
+            steps {
+                sh 'touch file1'
     }
 }
