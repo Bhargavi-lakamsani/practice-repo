@@ -1,7 +1,7 @@
 pipeline {
     agent any
 
-    triggers {webhook('http://jenkins-server.com/generic-webhook-trigger/invoke')}
+    triggers {webhook('https://github.com/Bhargavi-lakamsani/practice-repo.git')}
 
     stages {
         stage('Stage-1') {
