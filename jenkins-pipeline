@@ -1,0 +1,19 @@
+pipeline {
+    agent any
+
+    triggers {webhook('http://jenkins-server.com/generic-webhook-trigger/invoke')}
+
+    stages {
+        stage('Stage-1') {
+              steps {
+                sh 'touch tomcat'
+            }
+        }
+
+        stage('Stage-2') {
+            steps {
+                sh 'touch master'
+            }
+        }
+    }
+}
