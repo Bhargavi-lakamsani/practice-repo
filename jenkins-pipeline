@@ -5,7 +5,8 @@ pipeline {
             genericVariables: [
                 [key: 'token', value: 'mytoken']
             ],
-            token: 'mytoken'
+            token: 'mytoken',
+            causeString: 'Triggered by webhook'
         )
     }
     stages {
