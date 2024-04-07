@@ -1,7 +1,7 @@
 pipeline {
     agent any
     triggers {
-        genericWebhooktriggers(
+        generictriggers(
             genericVariables: [
                 [key: 'token', value: 'mytoken']
             ],
