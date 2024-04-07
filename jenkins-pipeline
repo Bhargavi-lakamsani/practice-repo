@@ -1,13 +1,12 @@
 pipeline {
     agent any
     triggers {
-        GenericTriggers(
+        GenericTrigger(
             genericVariables: [
                 [key: 'token', value: 'mytoken']
             ],
             token: 'mytoken'
-            
-        )
+            )
     }
     stages {
         stage('Stage-1') {
